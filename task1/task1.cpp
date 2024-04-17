@@ -18,7 +18,7 @@ int main() {
     int a;
     cin >> a;
     cout << "¬ведите модуль: ";
-    int p ;
+    int p;
     cin >> p;
     cout << "¬ведите степень: ";
     int degree;

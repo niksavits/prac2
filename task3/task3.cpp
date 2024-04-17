@@ -29,6 +29,6 @@ int main() {
         return 1;
     }
     int d = (u % m + m) % m;
-    cout << d << endl;
+    cout << "d: " << d << endl;
     return 0;
 }
