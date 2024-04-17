@@ -1,7 +1,8 @@
 #include <iostream>
+
 using namespace std;
 
-int genEuclid(int a, int b) {
+int genEuclid(int a, int b) { //Обобщенный алгоритм Евклида
     int r;
     while (b != 0) {
         r = a % b;
@@ -11,7 +12,7 @@ int genEuclid(int a, int b) {
     return a;
 }
 
-int multInvers(int c, int m) {
+int numReverse(int c, int m) { // нахождение обратного
     if(genEuclid(c, m) != 1) {
         cout << "Такого не существует!";
         return -1;
@@ -31,7 +32,7 @@ int main() {
     cout << "Введите m: ";
     int m;
     cin >> m;
-    int d = multInvers(c, m);
+    int d = numReverse(c, m);
     if (d != -1) {
         cout << "Число d равно: " << d;
     }

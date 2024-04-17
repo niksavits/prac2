@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int advEuclid(int a, int b, int &u, int &v) {
+int advEuclid(int a, int b, int &u, int &v) { // Расширенный Евклид
     if (b == 0) {
         u = 1;
         v = 0;
