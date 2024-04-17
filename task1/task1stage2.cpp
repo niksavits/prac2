@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
 using namespace std;
 
 bool isPrime(int n) {
@@ -29,7 +30,7 @@ int main() {
         } else {
             int logDegree = log2(degree);
             int j = logDegree;
-            int binary[32] = {0};
+            vector<int> binary(32, 0); // Инициализация вектора с 32 элементами, каждый равен 0
 
             for (int i = logDegree; i >= 0; i--) {
                 int bit = ((degree >> i) & 1);
