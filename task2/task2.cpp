@@ -1,22 +1,22 @@
 #include <iostream>
-
 using namespace std;
 
-int genEuclid(int a, int b) { //Обобщенный алгоритм Евклида
+int genEuclid(int a, int b) { //обобщенный алгоритм Евклида
     int r;
     while (b != 0) {
         r = a % b;
         a = b;
         b = r;
+        cout << "a: " << a << "\tb: " << b << "\tr: " << r << endl;
     }
     return a;
 }
 
-int numReverse(int c, int m) { // нахождение обратного
+int numReverse(int c, int m) { //нахождение обратного
     if(genEuclid(c, m) != 1) {
         cout << "Такого не существует!";
         return -1;
-        }
+    }
     for (int d = 1; d < m; d++) {
         if ((c*d)%m == 1) {
             return d;

@@ -30,7 +30,7 @@ int main() {
         } else {
             int logDegree = log2(degree);
             int j = logDegree;
-            vector<int> binary(32, 0); // Инициализация вектора с 32 элементами, каждый равен 0
+            vector<int> binary(32, 0);
 
             for (int i = logDegree; i >= 0; i--) {
                 int bit = ((degree >> i) & 1);
@@ -45,7 +45,6 @@ int main() {
                     result = (result * a) % p;
                 }
             }
-
             cout << "Результат: " << result << endl;
         }
     } else {
